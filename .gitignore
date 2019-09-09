@@ -6,6 +6,6 @@
 # *.sh
 
 # 仅上传
-*
+ignore/
 !.gitignore
-!docs/*
+!docs/**
