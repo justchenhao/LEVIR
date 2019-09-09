@@ -1,11 +1,11 @@
-# _site
-# .sass-cache
-# .jekyll-cache
-# Gemfile.lock
-# *.gem
-# *.sh
+_site
+.sass-cache
+.jekyll-cache
+Gemfile.lock
+*.gem
+*.sh
 
-# 仅上传
-ignore/
-!.gitignore
-!docs/**
+# # 仅上传
+# ignore/
+# !.gitignore
+# !docs/**
