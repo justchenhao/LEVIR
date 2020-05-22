@@ -3,20 +3,28 @@
   <head>
 
     
+      <script async src="https://www.googletagmanager.com/gtag/js?id=true"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'true');
+      </script>
+    
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>LEVIR-CD | LEVIR-CD is a new large-scale remote sensing change detection dataset, which is two orders of magnitude larger than other public datasets of this field.</title>
+<title>LEVIR-CD | LEVIR-CD is a new large-scale remote sensing binary change detection dataset, which would help develop novel deep learning-based algorithms for remote sensing image change detection.</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="LEVIR-CD" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="LEVIR-CD is a new large-scale remote sensing change detection dataset, which is two orders of magnitude larger than other public datasets of this field." />
-<meta property="og:description" content="LEVIR-CD is a new large-scale remote sensing change detection dataset, which is two orders of magnitude larger than other public datasets of this field." />
+<meta name="description" content="LEVIR-CD is a new large-scale remote sensing binary change detection dataset, which would help develop novel deep learning-based algorithms for remote sensing image change detection." />
+<meta property="og:description" content="LEVIR-CD is a new large-scale remote sensing binary change detection dataset, which would help develop novel deep learning-based algorithms for remote sensing image change detection." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="LEVIR-CD" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","headline":"LEVIR-CD","description":"LEVIR-CD is a new large-scale remote sensing change detection dataset, which is two orders of magnitude larger than other public datasets of this field.","name":"LEVIR-CD","@type":"WebSite","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/","description":"LEVIR-CD is a new large-scale remote sensing binary change detection dataset, which would help develop novel deep learning-based algorithms for remote sensing image change detection.","name":"LEVIR-CD","@type":"WebSite","headline":"LEVIR-CD","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,11 +37,11 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">LEVIR-CD</h1>
-      <h2 class="project-tagline">LEVIR-CD is a new large-scale remote sensing change detection dataset, which is two orders of magnitude larger than other public datasets of this field.</h2>
+      <h2 class="project-tagline">LEVIR-CD is a new large-scale remote sensing binary change detection dataset, which would help develop novel deep learning-based algorithms for remote sensing image change detection.</h2>
       
       
-        <a href="/" class="btn">Baidu Drive (coming soon)</a>
-        <a href="/" class="btn">Google Drive (coming soon)</a>
+        <a href="https://pan.baidu.com/s/1fzNiOE7elGRmIo2h6MIhZw" class="btn">Baidu Drive (code: l7iv)</a>
+        <a href="https://drive.google.com/open?id=1dLuzldMRmbBNKPpUkX8Z53hi6NHLrWim" class="btn">Google Drive</a>
 
       
     </header>
@@ -41,7 +49,15 @@
     <main id="content" class="main-content" role="main">
       <h2 id="overview-of-levir-cd">Overview of LEVIR-CD</h2>
 
-<p>LEVIR-CD is a new large-scale remote sensing building Change Detection dataset. It can be used to develop and evaluate change detection algorithms in remote sensing images.  We collect 637 high-resolution (0.5m/pixel) Google Earth image pairs with the size of 1024 × 1024 pixels. These bitemporal images with time span of 5 to 14 years have significant land-use changes, especially the construction growth. LEVIR-CD covers various types of buildings, such as villa residences, tall apartments, small garages and large warehouses. Here, we focus on building-related changes, including the building growth (the change from soil/grass/hardened ground or building under construction  to new build-up regions) and the building decline. These bitemporal images are annotated by remote sensing image interpretation experts using binary labels (1 for change and 0 for unchanged). The fully annotated LEVIR-CD contains a total of 31,333 individual change buildings.</p>
+<p>LEVIR-CD is a new large-scale remote sensing building Change Detection dataset. The introduced dataset would be a new benchmark for evaluating change detection (CD) algorithms, especially those based on deep learning.</p>
+
+<p>LEVIR-CD consists of 637 very high-resolution (VHR, 0.5m/pixel) Google Earth (GE) image patch pairs with a size of 1024 × 1024 pixels. These bitemporal images with time span of 5 to 14 years have significant land-use changes, especially the construction growth. LEVIR-CD covers various types of buildings, such as villa residences, tall apartments, small garages and large warehouses. Here, we focus on building-related changes, including the building growth (the change from soil/grass/hardened ground or building under construction  to new build-up regions) and the building decline. These bitemporal images are annotated by remote sensing image interpretation experts using binary labels (1 for change and 0 for unchanged). Each sample in our dataset is annotated by one annotator and then double-checked by another to produce high-quality annotations. The fully annotated LEVIR-CD contains a total of 31,333 individual change building instances.</p>
+
+<h2 id="geospatial-distribution-of-levir-cd">Geospatial Distribution of LEVIR-CD</h2>
+
+<p>The bitemporal images in LEVIR-CD are from 20 different regions that sit in several cities in Texas of the US, including Austin, Lakeway, Bee Cave, Buda, Kyle, Manor, Pflugervilletx, Dripping Springs, etc. The Figure below illustrates the geospatial distribution of our new dataset and an enlarged image patch. The captured time of our image data varies from 2002 to 2018. Images in different regions may be taken at different times. We want to introduce variations due to seasonal changes and illumination changes into our new dataset, which could help develop effective methods that can mitigate the impact of irrelevant changes on real changes.</p>
+
+<p><img src="assets\images\location.jpg" alt="samples" /></p>
 
 <h2 id="examples-of-annotated-samples">Examples of annotated samples</h2>
 
@@ -53,9 +69,13 @@
 
 <p><img src="assets\images\crop_samples.jpg" alt="cropped_examples" /></p>
 
+<h2 id="usage">Usage</h2>
+
+<p>The use of the images from Google Earth must respect the <a href="https://www.google.com/permissions/geoguidelines/">Google Earth terms of use</a>. All images and annotations in LEVIR-CD can only be used for academic purposes, but are prohibited for any commercial use.</p>
+
 <h2 id="about">About</h2>
 
-<p>We are from LEVIR, which is the abbreviation of ours’ laboratory: LEarning, VIsion and Remote sensing laboratory. Visit http://levir.buaa.edu.cn/ for more details.</p>
+<p>We are from LEVIR, which is the abbreviation of ours’ laboratory: LEarning, VIsion and Remote sensing laboratory. Visit the lab <a href="http://levir.buaa.edu.cn/">homepage</a> for more details.</p>
 
 <p>If you have any the problem or feedback in using LEVIR-CD, please contact</p>
 
@@ -63,6 +83,27 @@
   <li>Hao Chen at justchenhao@buaa.edu.cn</li>
   <li>Zhenwei Shi at shizhenwei@buaa.edu.cn</li>
 </ul>
+
+<h2 id="cite">Cite</h2>
+
+<p>If you use this dataset for your research, please cite our papers.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Article<span class="p">{</span>Chen2020,
+AUTHOR = <span class="p">{</span>Chen, Hao and Shi, Zhenwei<span class="p">}</span>,
+TITLE = <span class="p">{</span>A Spatial-Temporal Attention-Based Method and a New Dataset for Remote Sensing Image Change Detection<span class="p">}</span>,
+JOURNAL = <span class="p">{</span>Remote Sensing<span class="p">}</span>,
+VOLUME = <span class="p">{</span>12<span class="p">}</span>,
+YEAR = <span class="p">{</span>2020<span class="p">}</span>,
+NUMBER = <span class="p">{</span>10<span class="p">}</span>,
+ARTICLE-NUMBER = <span class="p">{</span>1662<span class="p">}</span>,
+URL = <span class="p">{</span>https://www.mdpi.com/2072-4292/12/10/1662<span class="p">}</span>,
+ISSN = <span class="p">{</span>2072-4292<span class="p">}</span>,
+DOI = <span class="p">{</span>10.3390/rs12101662<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can also find the related code resources (STANet) <a href="https://github.com/justchenhao/STANet">here</a> in GitHub.</p>
+
 
 
       <footer class="site-footer">
