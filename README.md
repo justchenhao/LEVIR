@@ -5,9 +5,7 @@ LEVIR-CD is a new large-scale remote sensing binary change detection dataset, wh
 ## News
 
 - 20230311: We have supplemented geospatial information (e.g., latitude and longitude coordinates) for each sample in LEVIR_CD. Files and more information can be found [here](https://github.com/justchenhao/STANet/tree/master/LEVIR_CD_spatial_info). 
-
 - 2021: we have provide more samples, namely [LEVIR-CD+](https://github.com/S2Looking/Dataset/tree/main/LEVIR-CD%2B/LEVIR-CD%2B).
--  
 - 2020: first version of LEVIR-CD has released!
 
 ## Overview of LEVIR-CD
